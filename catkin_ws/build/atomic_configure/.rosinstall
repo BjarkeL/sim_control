@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bjarke/DMP_project/sim_control/catkin_ws/devel/setup.sh
