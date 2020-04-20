@@ -1,6 +1,7 @@
 import rospy
 from std_msgs.msg import Bool, Float32, Int32, Float32MultiArray
 import numpy as np
+from cpp_functions import functions
  
 class SimControl(object):
 
@@ -45,6 +46,8 @@ class SimControl(object):
     
     def main_control(self):
         self.start_sequence()
+
+        print(functions.add(2,3)) # Just a test to demonstrate including c++ functions.
 
         while not rospy.is_shutdown():
             self.perform_action() # Communicate with the simulator and perform calculations.
